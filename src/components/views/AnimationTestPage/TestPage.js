@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './AnimationTestPage.css';
+import './TestPage.css';
 import { withStyles } from '@material-ui/core/styles';
 import { yellow, red, blue, green, purple, pink, lightBlue, lightGreen, lime, cyan } from '@material-ui/core/colors';
 import FormGroup from '@material-ui/core/FormGroup';
@@ -20,52 +20,39 @@ function AnimationTestPage() {
         //checkedOnlyForHome: false,
     })
 
-/*
-    const [LineVisible, setLineVisible] = useState({
-        lineSolarToBatt: "visible",
-        lineSolarToHome: "visible",
-        lineSolarToGrid: "visible",
-        lineBattToHome: "visible",
-        lineGridToBatt: "visible",
-        lineGridToHome: "visible",
+    const [DrawingElement, setDrawElement] = useState({
+        lineSolarToBatt: "hidden",
+        lineSolarToHome: "hidden",
+        lineSolarToGrid: "hidden",
+        lineBattToHome: "hidden",
+        lineGridToBatt: "hidden",
+        lineGridToHome: "hidden",
+        liveSolarToBatt: "hidden",
+        liveSolarToHome: "hidden",
+        liveSolarToGrid: "hidden",
+        liveBattToHome: "hidden",
+        liveGridToBatt: "hidden",
+        liveGridToHome: "hidden",
+        liveSolar: "hidden",
+        liveBatt: "hidden",
+        liveGrid: "hidden",
+        liveHome: "hidden",
+        blurSolar: "hidden",
+        blurBatt: "hidden",
+        blurGrid: "hidden"
     })
-*/
-    
-    const [LineSolarToBatt, setLineSolarToBatt] = useState("hidden")
-    const [LineSolarToHome, setLineSolarToHome] = useState("hidden")
-    const [LineSolarToGrid, setLineSolarToGrid] = useState("hidden")
-    const [LineBattToHome, setLineBattToHome] = useState("hidden")
-    const [LineGridToBatt, setLineGridToBatt] = useState("hidden")
-    const [LineGridToHome, setLineGridToHome] = useState("hidden")
-
-    const [LiveSolarToBatt, setLiveSolarToBatt] = useState("hidden")
-    const [LiveSolarToHome, setLiveSolarToHome] = useState("hidden")
-    const [LiveSolarToGrid, setLiveSolarToGrid] = useState("hidden")
-    const [LiveBattToHome, setLiveBattToHome] = useState("hidden")
-    const [LiveGridToBatt, setLiveGridToBatt] = useState("hidden")
-    const [LiveGridToHome, setLiveGridToHome] = useState("hidden")
-
-
-    const [LiveSolar, setLiveSolar] = useState("hidden")
-    const [LiveBatt, setLiveBatt] = useState("hidden")
-    const [LiveGrid, setLiveGrid] = useState("hidden")
-    const [LiveHome, setLiveHome] = useState("hidden")
-    const [BlurSolar, setBlurSolar] = useState("hidden")
-    const [BlurBatt, setBlurBatt] = useState("hidden")
-    const [BlurGrid, setBlurGrid] = useState("hidden")
 
 
     const [ThemeMode, setThemeMode] = useState({
         currentTheme: "white",
-        solarSwitchFont: "#FF0066",
-        battSwitchFont: "#00EE00",
+        solarSwitchFont: "#FF0000",
+        battSwitchFont: "#00CC00",
         gridSwitchFont: "#FFCC00",
         colorFillIn: "white",
         colorLiveGridImage: "#FFF500",
         colorLiveHomeImage: "#0085FF",
         colorLiveBattImage: "#05FF00",
-        colorLiveSolarImage: "#FF003D",
-        colorLiveKwFont: "#555555"
+        colorLiveSolarImage: "#FF003D"
     })
 
 
@@ -151,8 +138,7 @@ function AnimationTestPage() {
             updateThemeValue["colorLiveHomeImage"] = "white"
             updateThemeValue["colorLiveBattImage"] = "white"
             updateThemeValue["colorLiveSolarImage"] = "white"
-            updateThemeValue["solarSwitchFont"] = "#FF0066"
-            updateThemeValue["colorLiveKwFont"] = "white"
+            updateThemeValue["colorSwitchFont"] = "#DDDDDD"
             setThemeMode(updateThemeValue)
             //console.log(updateThemeValue)
             //console.log(ThemeMode)
@@ -164,56 +150,67 @@ function AnimationTestPage() {
             updateThemeValue["colorLiveHomeImage"] = "#0085FF"
             updateThemeValue["colorLiveBattImage"] = "#05FF00"
             updateThemeValue["colorLiveSolarImage"] = "#FF003D"
-            updateThemeValue["solarSwitchFont"] = "#FF0066"
-            updateThemeValue["colorLiveKwFont"] = "#555555"
+            updateThemeValue["colorSwitchFont"] = "#444444"
             setThemeMode(updateThemeValue)
             //console.log(updateThemeValue)
             //console.log(ThemeMode)
         }
 
     }
-
+    const updateDrawingElement = { ...DrawingElement }
     const commonSolarToBattControl = (flag) => {
-        setLineSolarToBatt(flag)
-        setLiveSolar(flag)
-        setBlurSolar(flag)
-        setLiveSolarToBatt(flag)
-        setLiveBatt(flag)
+        //const updateDrawingElement = { ...DrawingElement }
+        updateDrawingElement["lineSolarToBatt"] = flag;
+        updateDrawingElement["liveSolar"] = flag;
+        updateDrawingElement["blurSolar"] = flag;
+        updateDrawingElement["liveSolarToBatt"] = flag;
+        updateDrawingElement["liveBatt"] = flag;
+        //return updateDrawingElement;
     }
     const commonSolarToHomeControl = (flag) => {
-        setLineSolarToHome(flag)
-        setLiveSolar(flag)
-        setBlurSolar(flag)
-        setLiveSolarToHome(flag)
-        setLiveHome(flag)
+        //const updateDrawingElement = { ...DrawingElement }
+        updateDrawingElement["lineSolarToHome"] = flag;
+        updateDrawingElement["liveSolar"] = flag;
+        updateDrawingElement["blurSolar"] = flag;
+        updateDrawingElement["liveSolarToHome"] = flag;
+        updateDrawingElement["liveHome"] = flag;
+        //return updateDrawingElement;
     }
     const commonSolarToGridControl = (flag) => {
-        setLineSolarToGrid(flag)
-        setLiveSolar(flag)
-        setBlurSolar(flag)
-        setLiveSolarToGrid(flag)
-        setLiveGrid(flag)
+        //const updateDrawingElement = { ...DrawingElement }
+        updateDrawingElement["lineSolarToGrid"] = flag;
+        updateDrawingElement["liveSolar"] = flag;
+        updateDrawingElement["blurSolar"] = flag;
+        updateDrawingElement["liveSolarToGrid"] = flag;
+        updateDrawingElement["liveGrid"] = flag;
+        //return updateDrawingElement;
     }
     const commonBattToHomeControl = (flag) => {
-        setLineBattToHome(flag)
-        setLiveBatt(flag)
-        setBlurBatt(flag)
-        setLiveBattToHome(flag)
-        setLiveHome(flag)
+        //const updateDrawingElement = { ...DrawingElement }
+        updateDrawingElement["lineBattToHome"] = flag;
+        updateDrawingElement["liveBatt"] = flag;
+        updateDrawingElement["blurBatt"] = flag;
+        updateDrawingElement["liveBattToHome"] = flag;
+        updateDrawingElement["liveHome"] = flag;
+        //return updateDrawingElement;
     }
     const commonGridToHomeControl = (flag) => {
-        setLineGridToHome(flag)
-        setLiveGrid(flag)
-        setBlurGrid(flag)
-        setLiveGridToHome(flag)
-        setLiveHome(flag)
+        //const updateDrawingElement = { ...DrawingElement }
+        updateDrawingElement["lineGridToHome"] = flag;
+        updateDrawingElement["liveGrid"] = flag;
+        updateDrawingElement["blurGrid"] = flag;
+        updateDrawingElement["liveGridToHome"] = flag;
+        updateDrawingElement["liveHome"] = flag;
+        //return updateDrawingElement;
     }
     const commonGridToBattControl = (flag) => {
-        setLineGridToBatt(flag)
-        setLiveGrid(flag)
-        setBlurGrid(flag)
-        setLiveGridToBatt(flag)
-        setLiveBatt(flag)
+        //const updateDrawingElement = { ...DrawingElement }
+        updateDrawingElement["lineGridToBatt"] = flag;
+        updateDrawingElement["liveGrid"] = flag;
+        updateDrawingElement["blurGrid"] = flag;
+        updateDrawingElement["liveGridToBatt"] = flag;
+        updateDrawingElement["liveBatt"] = flag;
+        //return updateDrawingElement;
     }
 //    const commonOnlyForHomeControl = (flag) => {   
 //    }
@@ -221,30 +218,32 @@ function AnimationTestPage() {
 
     useEffect(() => {
             console.log("여기는 hook 안입니다")
+        //const updateDrawingElement = { ...DrawingElement }
         
         if (SwitchState.checkedSolarToBatt === true) {                     // SolarToBatt : ON
             commonSolarToBattControl("visible")
         } else {   // (SwitchState.checkedSolarToBatt === false)           // SolarToBatt : OFF
             commonSolarToBattControl("hidden")
             if (SwitchState.checkedSolarToHome === true || SwitchState.checkedSolarToGrid === true) {
-                setLiveSolar("visible")
-                setBlurSolar("visible")
+                updateDrawingElement["liveSolar"] = "visible"
+                updateDrawingElement["blurSolar"] = "visible"
             }
             if (SwitchState.checkedBattToHome === true || SwitchState.checkedGridToBatt === true) {
-                setLiveBatt("visible")
+                updateDrawingElement["blurSolar"] = "visible"
+                updateDrawingElement["liveBatt"] = "visible"
             }
         }
-
+        setDrawElement(updateDrawingElement)
         if (SwitchState.checkedSolarToHome === true) {                     // SolarToHome : ON
             commonSolarToHomeControl("visible")
         } else {                                                           // SolarToHome : OFF
             commonSolarToHomeControl("hidden")
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedSolarToGrid === true) {
-                setLiveSolar("visible")
-                setBlurSolar("visible")
+                updateDrawingElement["liveSolar"] = "visible"
+                updateDrawingElement["blurSolar"] = "visible"
             }
             if (SwitchState.checkedBattToHome === true || SwitchState.checkedGridToHome === true) {
-                setLiveHome("visible")
+                updateDrawingElement["liveHome"] = "visible"
             }
         }
         
@@ -254,11 +253,11 @@ function AnimationTestPage() {
         } else {                                                           // SolarToGrid : OFF
             commonSolarToGridControl("hidden")
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedSolarToHome === true) {
-                setLiveSolar("visible")
-                setBlurSolar("visible")
+                updateDrawingElement["liveSolar"] = "visible"
+                updateDrawingElement["blurSolar"] = "visible"
             }
             if (SwitchState.checkedBattToHome === true || SwitchState.checkedGridToHome === true) {
-                setLiveHome("visible")
+                updateDrawingElement["liveHome"] = "visible"
             }
         }
 
@@ -267,22 +266,22 @@ function AnimationTestPage() {
         } else {                                                           // BattToHome : OFF
             commonBattToHomeControl("hidden")
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedGridToBatt === true) {
-                setLiveBatt("visible")
+                updateDrawingElement["liveBatt"] = "visible"
             }
             if (SwitchState.checkedSolarToHome === true || SwitchState.checkedGridToHome === true) {
-                setLiveHome("visible")
+                updateDrawingElement["liveHome"] = "visible"
             }
         }
 
         if (SwitchState.checkedGridToHome === true) {                      // GridToHome : ON
             commonGridToHomeControl("visible")
         } else {                                                           // GridToHome : OFF
-            commonGridToHomeControl("hidden")
+            commonGridToHomeControl("hidden") 
             if (SwitchState.checkedSolarToGrid === true) {
-                setLiveGrid("visible")
+                updateDrawingElement["liveGrid"] = "visible"
             }
             if (SwitchState.checkedSolarToHome === true || SwitchState.checkedBattToHome === true) {
-                setLiveHome("visible")
+                updateDrawingElement["liveHome"] = "visible"
             }
         }
 
@@ -291,18 +290,18 @@ function AnimationTestPage() {
         } else {                                                           // GridToBatt : OFF
             commonGridToBattControl("hidden")
             if (SwitchState.checkedGridToHome === true) {
-                setLiveGrid("visible")
-                setBlurGrid("visible")
+                updateDrawingElement["liveGrid"] = "visible"
+                updateDrawingElement["blurGrid"] = "visible"
             }
             if (SwitchState.checkedSolarToGrid === true) {
-                setLiveGrid("visible")
+                updateDrawingElement["liveGrid"] = "visible"
             }
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedBattToHome === true) {
-                setLiveBatt("visible")
+                updateDrawingElement["liveBatt"] = "visible"
             }
         }
 
-
+        setDrawElement(updateDrawingElement)
 
         
     }, [SwitchState])
@@ -318,27 +317,27 @@ function AnimationTestPage() {
 
                     <g id="lg_enervu_frame" clip-path="url(#clip0)">
                         <g id="drawing_line_group">
-                            <path id="curve_solarToCharge" d="M143.075 76C53.9999 101.5 28.5 187 45.6711 246.747" stroke="url(#paint0_linear)" visibility={LineSolarToBatt} />
-                            <path id="curve_solarToGrid" d="M217.662 76C306.737 101.5 332.237 187 315.066 246.747" stroke="url(#paint1_linear)" visibility={LineSolarToGrid} />
-                            <path id="curve_gridToCharge" d="M279.5 308.288C213.213 373.024 123.395 352.808 80.0071 308.288" stroke="url(#paint2_linear)" visibility={LineGridToBatt} />
-                            <path id="line_solarToHome" d="M180 106L180 190" stroke="url(#paint3_linear)" visibility={LineSolarToHome} />
-                            <path id="line_chargeToHome" d="M80 263L163 218" stroke="url(#paint4_linear)" visibility={LineBattToHome} />
-                            <path id="line_gridToHome" d="M280 264L198 217" stroke="url(#paint5_linear)" visibility={LineGridToHome} />
+                            <path id="curve_solarToCharge" d="M143.075 76C53.9999 101.5 28.5 187 45.6711 246.747" stroke="url(#paint0_linear)" visibility={DrawingElement.LineSolarToBatt} />
+                            <path id="curve_solarToGrid" d="M217.662 76C306.737 101.5 332.237 187 315.066 246.747" stroke="url(#paint1_linear)" visibility={DrawingElement.LineSolarToGrid} />
+                            <path id="curve_gridToCharge" d="M279.5 308.288C213.213 373.024 123.395 352.808 80.0071 308.288" stroke="url(#paint2_linear)" visibility={DrawingElement.lineGridToBatt} />
+                            <path id="line_solarToHome" d="M180 106L180 190" stroke="url(#paint3_linear)" visibility={DrawingElement.lineSolarToHome} />
+                            <path id="line_chargeToHome" d="M80 263L163 218" stroke="url(#paint4_linear)" visibility={DrawingElement.lineBattToHome} />
+                            <path id="line_gridToHome" d="M280 264L198 217" stroke="url(#paint5_linear)" visibility={DrawingElement.lineGridToHome} />
                         </g>
                         <g id="moving_circle_group">
-                            <circle class="solarToGrid" r="3" fill="white" fill-opacity="0.8" visibility={LiveSolarToGrid}></circle>
-                            <circle class="solarToGrid" r="16" fill="white" fill-opacity="0.3" visibility={LiveSolarToGrid}></circle>
-                            <circle class="solarToHome" r="3" fill="white" fill-opacity="0.8" visibility={LiveSolarToHome}></circle>
-                            <circle class="solarToHome" r="16" fill="white" fill-opacity="0.3" visibility={LiveSolarToHome}></circle>
-                            <circle class="solarToBatt" r="3" fill="white" fill-opacity="0.8" visibility={LiveSolarToBatt}></circle>
-                            <circle class="solarToBatt" r="16" fill="white" fill-opacity="0.3" visibility={LiveSolarToBatt}></circle>
+                            <circle class="solarToGrid" r="3" fill="white" fill-opacity="0.8" visibility={DrawingElement.liveSolarToGrid}></circle>
+                            <circle class="solarToGrid" r="16" fill="white" fill-opacity="0.3" visibility={DrawingElement.liveSolarToGrid}></circle>
+                            <circle class="solarToHome" r="3" fill="white" fill-opacity="0.8" visibility={DrawingElement.liveSolarToHome}></circle>
+                            <circle class="solarToHome" r="16" fill="white" fill-opacity="0.3" visibility={DrawingElement.liveSolarToHome}></circle>
+                            <circle class="solarToBatt" r="3" fill="white" fill-opacity="0.8" visibility={DrawingElement.liveSolarToBatt}></circle>
+                            <circle class="solarToBatt" r="16" fill="white" fill-opacity="0.3" visibility={DrawingElement.liveSolarToBatt}></circle>
 
-                            <circle class="battToHome" r="3" fill="white" fill-opacity="0.8" visibility={LiveBattToHome}></circle>
-                            <circle class="battToHome" r="16" fill="white" fill-opacity="0.3" visibility={LiveBattToHome}></circle>
-                            <circle class="gridToBatt" r="3" fill="white" fill-opacity="0.8" visibility={LiveGridToBatt}></circle>
-                            <circle class="gridToBatt" r="16" fill="white" fill-opacity="0.3" visibility={LiveGridToBatt}></circle>
-                            <circle class="gridToHome" r="3" fill="white" fill-opacity="0.8" visibility={LiveGridToHome}></circle>
-                            <circle class="gridToHome" r="16" fill="white" fill-opacity="0.3" visibility={LiveGridToHome}></circle>
+                            <circle class="battToHome" r="3" fill="white" fill-opacity="0.8" visibility={DrawingElement.liveBattToHome}></circle>
+                            <circle class="battToHome" r="16" fill="white" fill-opacity="0.3" visibility={DrawingElement.liveBattToHome}></circle>
+                            <circle class="gridToBatt" r="3" fill="white" fill-opacity="0.8" visibility={DrawingElement.liveGridToBatt}></circle>
+                            <circle class="gridToBatt" r="16" fill="white" fill-opacity="0.3" visibility={DrawingElement.liveGridToBatt}></circle>
+                            <circle class="gridToHome" r="3" fill="white" fill-opacity="0.8" visibility={DrawingElement.liveGridToHome}></circle>
+                            <circle class="gridToHome" r="16" fill="white" fill-opacity="0.3" visibility={DrawingElement.liveGridToHome}></circle>
                         </g>
                         <g id="dead_grid_group">
                             <g id="dead_circle_grid">
@@ -359,11 +358,11 @@ function AnimationTestPage() {
                                 </g>
                             </g>
                         </g>
-                        <g id="blur_circle_grid" filter="url(#filter0_dd)" visibility={BlurGrid}>
+                        <g id="blur_circle_grid" filter="url(#filter0_dd)" visibility={DrawingElement.blurGrid}>
                             <circle cx="297" cy="280" r="47" fill={ThemeMode.colorFillIn} />
                             <circle cx="297" cy="280" r="46" stroke="#FFF500" stroke-opacity="0.9" stroke-width="2" />
                         </g>
-                        <g id="live_grid_group" visibility={LiveGrid}>
+                        <g id="live_grid_group" visibility={DrawingElement.liveGrid}>
                             <g id="live_circle_grid">
                                 <circle cx="297" cy="280" r="47" fill={ThemeMode.colorFillIn} />
                                 <circle cx="297" cy="280" r="46" stroke="#FFF500" stroke-opacity="0.9" stroke-width="2" />
@@ -399,7 +398,7 @@ function AnimationTestPage() {
                             </g>
                         </g>
 
-                        <g id="live_home_group" visibility={LiveHome}>
+                        <g id="live_home_group" visibility={DrawingElement.livehome}>
                             <g id="live_circle_home">
                                 <circle cx="180" cy="213" r="44" fill={ThemeMode.colorFillIn} />
                                 <circle cx="180" cy="213" r="45" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2" />
@@ -427,11 +426,11 @@ function AnimationTestPage() {
                                 </g>
                             </g>
                         </g>
-                        <g id="blur_circle_charge" filter="url(#filter2_dd)" visibility={BlurBatt}>
+                        <g id="blur_circle_charge" filter="url(#filter2_dd)" visibility={DrawingElement.blurBatt}>
                             <circle cx="61" cy="280" r="47" fill={ThemeMode.colorFillIn} />
                             <circle cx="61" cy="280" r="46" stroke="#05FF00" stroke-opacity="0.9" stroke-width="2" />
                         </g>
-                        <g id="live_charge_group" visibility={LiveBatt}>
+                        <g id="live_charge_group" visibility={DrawingElement.liveBatt}>
                             <g id="live_circle_charge">
                                 <circle cx="61" cy="280" r="47" fill={ThemeMode.colorFillIn} />
                                 <circle cx="61" cy="280" r="46" stroke="#05FF00" stroke-opacity="0.9" stroke-width="2" />
@@ -511,11 +510,11 @@ function AnimationTestPage() {
                                 </g>
                             </g>
                         </g>
-                        <g id="blur_circle_solar" filter="url(#filter3_dd)" visibility={BlurSolar}>
+                        <g id="blur_circle_solar" filter="url(#filter3_dd)" visibility={DrawingElement.blurSolar}>
                             <circle cx="180" cy="77" r="47" fill={ThemeMode.colorFillIn} />
                             <circle cx="180" cy="77" r="46" stroke="#FF003D" stroke-opacity="0.9" stroke-width="2" />
                         </g>
-                        <g id="live_solar_group" visibility={LiveSolar}>
+                        <g id="live_solar_group" visibility={DrawingElement.liveSolar}>
                             <g id="live_circle_solar">
                                 <circle cx="180" cy="77" r="47" fill={ThemeMode.colorFillIn} />
                                 <circle cx="180" cy="77" r="48" stroke="#FF003D" stroke-opacity="0.9" stroke-width="2" />
@@ -583,17 +582,6 @@ function AnimationTestPage() {
                                 </g>
                             </g>
                         </g>
-                        </g>
-                        
-                    <g id="kw_text">
-                        <text id="solarKW" text-anchor="middle" x="180" y="116" fill={ThemeMode.colorLiveKwFont} font-size="14"        
-                        fontFamily="Arial" visibility={LiveSolar}>10 kW</text>
-                            <text id="battKW" text-anchor="middle" x="62" y="318" fill={ThemeMode.colorLiveKwFont} font-size="14"
-                            fontFamily="Arial" visibility={LiveGrid}>5 kW</text>
-                            <text id="gridKW" text-anchor="middle" x="300" y="316" fill={ThemeMode.colorLiveKwFont} font-size="14"
-                            fontFamily="Arial" visibility={LiveHome}>6 kW</text>
-                            <text id="homeKW" text-anchor="middle" x="180" y="246" fill={ThemeMode.colorLiveKwFont} font-size="14"
-                            fontFamily="Arial" visibility={LiveBatt}>2 kW</text>
                     </g>
                     <defs>
                         <filter id="filter0_dd" x="241" y="224" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -701,15 +689,15 @@ function AnimationTestPage() {
                 <FormGroup row>
                     <FormControlLabel
                         control={<RedSwitch size="normal" checked={SwitchState.checkedSolarToBatt} onChange={handleChange} name="checkedSolarToBatt" />}
-                        label={<span style={{ color: ThemeMode.solarSwitchFont, fontFamily: "Arial" }}>SolarToBatt</span>} labelPlacement="start"
+                        label={<span style={{ color: ThemeMode.solarSwitchFont, fontFamily: "sans-serif" }}>SolarToBatt</span>} labelPlacement="start"
                     />
                     <FormControlLabel
                         control={<RedSwitch size="normal" checked={SwitchState.checkedSolarToHome} onChange={handleChange} name="checkedSolarToHome" />}
-                        label={<span style={{ color: ThemeMode.solarSwitchFont, fontFamily: "Arial" }}>SolarToHome</span>} labelPlacement="start"
+                        label={<span style={{ color: ThemeMode.solarSwitchFont, fontFamily: "sans-serif" }}>SolarToHome</span>} labelPlacement="start"
                     />
                     <FormControlLabel
                         control={<RedSwitch size="normal" checked={SwitchState.checkedSolarToGrid} onChange={handleChange} name="checkedSolarToGrid" />}
-                        label={<span style={{ color: ThemeMode.solarSwitchFont, fontFamily: "Arial" }}>SolarToGrid</span>} labelPlacement="start"
+                        label={<span style={{ color: ThemeMode.solarSwitchFont, fontFamily: "sans-serif" }}>SolarToGrid</span>} labelPlacement="start"
                     />
                 </FormGroup>
             </div>
@@ -717,15 +705,15 @@ function AnimationTestPage() {
                 <FormGroup row>
                     <FormControlLabel
                         control={<GreenSwitch size="normal" checked={SwitchState.checkedBattToHome} onChange={handleChange} name="checkedBattToHome" />}
-                        label={<span style={{ color: ThemeMode.battSwitchFont, fontFamily: "Arial" }}>BattToHome</span>} labelPlacement="start"
+                        label={<span style={{ color: ThemeMode.battSwitchFont, fontFamily: "sans-serif" }}>BattToHome</span>} labelPlacement="start"
                     />
                     <FormControlLabel
                         control={<YellowSwitch size="normal" checked={SwitchState.checkedGridToHome} onChange={handleChange} name="checkedGridToHome" />}
-                        label={<span style={{ color: ThemeMode.gridSwitchFont, fontFamily: "Arial" }}>GridToHome</span>} labelPlacement="start"
+                        label={<span style={{ color: ThemeMode.gridSwitchFont, fontFamily: "sans-serif" }}>GridToHome</span>} labelPlacement="start"
                     />
                     <FormControlLabel
                         control={<YellowSwitch size="normal" checked={SwitchState.checkedGridToBatt} onChange={handleChange} name="checkedGridToBatt" />}
-                        label={<span style={{ color: ThemeMode.gridSwitchFont, fontFamily: "Arial" }}>GridToBatt</span>} labelPlacement="start"
+                        label={<span style={{ color: ThemeMode.gridSwitchFont, fontFamily: "sans-serif" }}>GridToBatt</span>} labelPlacement="start"
                     />
                 </FormGroup>
                 </div>

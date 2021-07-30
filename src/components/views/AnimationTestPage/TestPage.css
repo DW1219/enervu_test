@@ -1,14 +1,16 @@
-.wrap_svg{
+.wrap_svg {
     padding: 10px;
     display: flex;
     justify-content: center;
 
 }
-.switchForm1{
+
+.switchForm1 {
     display: flex;
     justify-content: center;
 }
-.switchForm2{
+
+.switchForm2 {
     display: flex;
     justify-content: center;
 }
@@ -19,11 +21,13 @@ circle.solarToBatt {
     offset-path: path('M143.075 76C53.9999 101.5 28.5 187 45.6711 246.747');
     animation: moveTo 2s linear forwards infinite, colorSolarToBatt 2s linear forwards infinite;
 }
+
 circle.solarToGrid {
     motion-path: path('M217.662 76C306.737 101.5 332.237 187 315.066 246.747');
     offset-path: path('M217.662 76C306.737 101.5 332.237 187 315.066 246.747');
     animation: moveTo 2s linear forwards infinite, colorSolarToGrid 2s linear forwards infinite;
 }
+
 circle.solarToHome {
     motion-path: path('M180 106L180 190');
     offset-path: path('M180 106L180 190');
@@ -35,7 +39,7 @@ circle.solarToHome {
 }
 
 
-#blur_solar_group{
+#blur_solar_group {
     animation: moveTo 4s linear forwards infinite
 }
 
@@ -52,6 +56,7 @@ circle.gridToBatt {
     offset-path: path('M279.5 308.288C213.213 373.024 123.395 352.808 80.0071 308.288');
     animation: moveTo 2s linear forwards infinite, colorGridToBatt 2s linear forwards infinite;
 }
+
 circle.gridToHome {
     motion-path: path('M280 264L198 217');
     offset-path: path('M280 264L198 217');
@@ -62,26 +67,32 @@ circle.gridToHome {
 
 
 /* Moving Animation */
-@keyframes moveTo{
-    0%{
+@keyframes moveTo {
+    0% {
         offset-distance: 0%;
     }
-    30%{
+
+    30% {
         opacity: 0.7;
     }
-    40%{
+
+    40% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    80%{
+
+    80% {
         opacity: 0.7;
     }
-    100%{
+
+    100% {
         offset-distance: 100%;
     }
 }
+
 /* Moving Animation */
 @keyframes moveToForImage {
     0% {
@@ -112,68 +123,84 @@ circle.gridToHome {
 
 
 /* Color Animation - Solar To Something */
-@keyframes colorSolarToBatt{
-    0%{
-        fill:#FF003D;
+@keyframes colorSolarToBatt {
+    0% {
+        fill: #FF003D;
     }
-    90%{
-        fill:#05FF00;
+
+    90% {
+        fill: #05FF00;
     }
-    100%{
-        fill:#05FF00;
-    }
-}
-@keyframes colorSolarToGrid{
-    0%{
-        fill:#FF003D;
-    }
-    90%{
-        fill:#FFF500;
-    }
-    100%{
-        fill:#FFF500;
+
+    100% {
+        fill: #05FF00;
     }
 }
-@keyframes colorSolarToHome{
-    0%{
-        fill:#FF003D;
+
+@keyframes colorSolarToGrid {
+    0% {
+        fill: #FF003D;
     }
-    100%{
-        fill:#0085ff;
+
+    90% {
+        fill: #FFF500;
+    }
+
+    100% {
+        fill: #FFF500;
     }
 }
+
+@keyframes colorSolarToHome {
+    0% {
+        fill: #FF003D;
+    }
+
+    100% {
+        fill: #0085ff;
+    }
+}
+
 /* Color Animation - Batt To Something */
-@keyframes colorBattToHome{
-    0%{
-        fill:#05FF00;
+@keyframes colorBattToHome {
+    0% {
+        fill: #05FF00;
     }
-    90%{
-        fill:#0085ff;
+
+    90% {
+        fill: #0085ff;
     }
-    100%{
-        fill:#0085ff;
+
+    100% {
+        fill: #0085ff;
     }
 }
+
 /* Color Animation - Grid To Something */
-@keyframes colorGridToBatt{
-    0%{
-        fill:#FFF500;
+@keyframes colorGridToBatt {
+    0% {
+        fill: #FFF500;
     }
-    30%{
-        fill:#FFF500;
+
+    30% {
+        fill: #FFF500;
     }
-    100%{
-        fill:#05FF00;
+
+    100% {
+        fill: #05FF00;
     }
 }
-@keyframes colorGridToHome{
-    0%{
-        fill:#FFF500;
+
+@keyframes colorGridToHome {
+    0% {
+        fill: #FFF500;
     }
-    30%{
-        fill:#FFF500;
+
+    30% {
+        fill: #FFF500;
     }
-    100%{
-        fill:#0085ff;
+
+    100% {
+        fill: #0085ff;
     }
 }

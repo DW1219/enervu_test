@@ -30,5 +30,11 @@ begin="0s" repeatCount="indefinite"
 
 
 
+                    <g id="kw_text">
+                        <text id="solarKW" text-anchor="middle" x="180" y="98" fill="#CCCCCC" font-size="13" visibility={LiveSolarVisible}>{props.KwSolar} kW</text>
+                        <text id="gridKW" text-anchor="middle" x="54" y="236" fill="#CCCCCC" font-size="13" visibility={LiveGridVisible}>{props.KwGrid} kW</text>
+                        <text id="homeKW" text-anchor="middle" x="305" y="236" fill="#CCCCCC" font-size="13" visibility={LiveHomeVisible}>{props.KwHome} kW</text>
+                        <text id="powerwallKW" text-anchor="middle" x="180" y="370" fill="#CCCCCC" font-size="13" visibility={LivePowerwallVisible}>{props.KwPowerwall} kW</text>
+                    </g>
 
  */
