@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
 
-          <Route exact path="/" component={DrawingPage} />
+          <Route exact path="/" component={AnimationTestPage} />
 
     </div>
   );

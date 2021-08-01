@@ -598,16 +598,16 @@ function AnimationTestPage() {
 <g id="svg_home">
 <g id="dead_home_group_2">
 <g id="dead_circle_home_group">
-<g id="dead_circle_home6" style="mix-blend-mode:color-dodge" filter="url(#filter9_f)">
+<g id="dead_circle_home6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter9_f)">
 <circle cx="180" cy="213" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_home5" style="mix-blend-mode:color-dodge" filter="url(#filter10_f)">
+<g id="dead_circle_home5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter10_f)">
 <circle cx="180" cy="213" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_home4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter11_f)">
+<g id="dead_circle_home4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter11_f)">
 <circle cx="180" cy="213" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="dead_circle_home3" style="mix-blend-mode:hard-light" filter="url(#filter12_dddii)">
+<g id="dead_circle_home3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter12_dddii)">
 <circle cx="180" cy="213" r="47" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="dead_circle_home2" filter="url(#filter13_f)">
@@ -619,19 +619,19 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="dead_home_image_2">
-<g id="hGroup6" style="mix-blend-mode:color-dodge" filter="url(#filter15_f)">
+<g id="hGroup6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter15_f)">
 <path id="Vector_37" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_38" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="hGroup5" style="mix-blend-mode:color-dodge" filter="url(#filter16_f)">
+<g id="hGroup5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter16_f)">
 <path id="Vector_39" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_40" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="hGroup4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter17_f)">
+<g id="hGroup4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter17_f)">
 <path id="Vector_41" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#0085FF"/>
 <path id="Vector_42" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#0085FF"/>
 </g>
-<g id="hGroup3" style="mix-blend-mode:hard-light" filter="url(#filter18_dddii)">
+<g id="hGroup3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter18_dddii)">
 <path id="Vector_43" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3"/>
 <path id="Vector_44" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3"/>
 </g>
@@ -647,16 +647,16 @@ function AnimationTestPage() {
 </g>
 <g id="live_home_group_2">
 <g id="live_circle_home_group">
-<g id="live_circle_home6" style="mix-blend-mode:color-dodge" filter="url(#filter21_f)">
+<g id="live_circle_home6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter21_f)">
 <circle cx="180" cy="213" r="47" stroke="#00D1FF" stroke-opacity="0.9" stroke-width="8"/>
 </g>
-<g id="live_circle_home5" style="mix-blend-mode:color-dodge" filter="url(#filter22_f)">
+<g id="live_circle_home5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter22_f)">
 <circle cx="180" cy="213" r="47" stroke="#00D1FF" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="live_circle_home4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter23_f)">
+<g id="live_circle_home4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter23_f)">
 <circle cx="180" cy="213" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="live_circle_home3" style="mix-blend-mode:hard-light" filter="url(#filter24_dddii)">
+<g id="live_circle_home3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter24_dddii)">
 <circle cx="180" cy="213" r="47" stroke="#00D1FF" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="live_circle_home2" filter="url(#filter25_f)">
@@ -667,19 +667,19 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="live_home_image_2">
-<g id="hGroup6_2" style="mix-blend-mode:color-dodge" filter="url(#filter27_f)">
+<g id="hGroup6_2" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter27_f)">
 <path id="Vector_49" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#00D1FF" stroke-width="8"/>
 <path id="Vector_50" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#00D1FF" stroke-width="8"/>
 </g>
-<g id="hGroup5_2" style="mix-blend-mode:color-dodge" filter="url(#filter28_f)">
+<g id="hGroup5_2" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter28_f)">
 <path id="Vector_51" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#00D1FF" stroke-width="3"/>
 <path id="Vector_52" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#00D1FF" stroke-width="3"/>
 </g>
-<g id="hGroup4_2" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter29_f)">
+<g id="hGroup4_2" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter29_f)">
 <path id="Vector_53" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#0085FF"/>
 <path id="Vector_54" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#0085FF"/>
 </g>
-<g id="hGroup3_2" style="mix-blend-mode:hard-light" filter="url(#filter30_dddii)">
+<g id="hGroup3_2" style={{mixBlendMode: 'hard-light'}} filter="url(#filter30_dddii)">
 <path id="Vector_55" fill-rule="evenodd" clip-rule="evenodd" d="M179.506 191.497L158.4 209.041V226.586C158.4 227.873 159.528 229 160.817 229H173.706V214.675H185.467V229H198.357C199.646 229 200.773 227.873 200.773 226.586V209.041L179.506 191.497Z" stroke="#00D1FF" stroke-opacity="0.2" stroke-width="3"/>
 <path id="Vector_56" fill-rule="evenodd" clip-rule="evenodd" d="M208.668 204.856L200.773 198.257V183.288C200.773 182.644 200.29 182.161 199.485 182.161H192.557C191.751 182.161 191.268 182.644 191.268 183.288V190.37L182.406 182.966C180.795 181.678 178.378 181.678 176.767 182.966L150.506 204.856C149.861 205.339 149.861 206.144 150.345 206.627L152.6 209.202C153.083 209.846 153.728 209.846 154.211 209.363L179.506 188.277L204.962 209.363C205.446 209.846 206.251 209.685 206.574 209.202L208.829 206.627C209.312 205.983 209.312 205.339 208.668 204.856Z" stroke="#00D1FF" stroke-opacity="0.2" stroke-width="3"/>
 </g>
@@ -697,16 +697,16 @@ function AnimationTestPage() {
 <g id="svg_grid">
 <g id="dead_grid_group_2">
 <g id="dead_circle_grid_group">
-<g id="dead_circle_grid6" style="mix-blend-mode:color-dodge" filter="url(#filter33_f)">
+<g id="dead_circle_grid6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter33_f)">
 <circle cx="297" cy="280" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_grid5" style="mix-blend-mode:color-dodge" filter="url(#filter34_f)">
+<g id="dead_circle_grid5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter34_f)">
 <circle cx="297" cy="280" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_grid4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter35_f)">
+<g id="dead_circle_grid4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter35_f)">
 <circle cx="297" cy="280" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="dead_circle_grid3" style="mix-blend-mode:hard-light" filter="url(#filter36_dddii)">
+<g id="dead_circle_grid3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter36_dddii)">
 <circle cx="297" cy="280" r="47" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="dead_circle_grid2" filter="url(#filter37_f)">
@@ -718,16 +718,16 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="dead_grid_image_2">
-<g id="Vector6" style="mix-blend-mode:color-dodge" filter="url(#filter39_f)">
+<g id="Vector6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter39_f)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="Vector5" style="mix-blend-mode:color-dodge" filter="url(#filter40_f)">
+<g id="Vector5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter40_f)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="Vector4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter41_f)">
+<g id="Vector4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter41_f)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#0085FF"/>
 </g>
-<g id="Vector3" style="mix-blend-mode:hard-light" filter="url(#filter42_dddii)">
+<g id="Vector3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter42_dddii)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3" shape-rendering="crispEdges"/>
 </g>
 <g id="Vector2" filter="url(#filter43_f)">
@@ -744,16 +744,16 @@ function AnimationTestPage() {
 </g>
 <g id="live_grid_group_2">
 <g id="live_circle_grid_group">
-<g id="live_circle_grid6" style="mix-blend-mode:color-dodge" filter="url(#filter46_f)">
+<g id="live_circle_grid6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter46_f)">
 <circle cx="297" cy="280" r="47" stroke="#FFF500" stroke-opacity="0.9" stroke-width="8"/>
 </g>
-<g id="live_circle_grid5" style="mix-blend-mode:color-dodge" filter="url(#filter47_f)">
+<g id="live_circle_grid5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter47_f)">
 <circle cx="297" cy="280" r="47" stroke="#FFF500" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="live_circle_grid4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter48_f)">
+<g id="live_circle_grid4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter48_f)">
 <circle cx="297" cy="280" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="live_circle_grid3" style="mix-blend-mode:hard-light" filter="url(#filter49_dddii)">
+<g id="live_circle_grid3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter49_dddii)">
 <circle cx="297" cy="280" r="47" stroke="#FFF500" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="live_circle_grid2" filter="url(#filter50_f)">
@@ -764,16 +764,16 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="live_grid_image_2">
-<g id="Vector6_2" style="mix-blend-mode:color-dodge" filter="url(#filter52_f)">
+<g id="Vector6_2" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter52_f)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#FFF500" stroke-width="3"/>
 </g>
-<g id="Vector5_2" style="mix-blend-mode:color-dodge" filter="url(#filter53_f)">
+<g id="Vector5_2" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter53_f)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#FFF500" stroke-width="3"/>
 </g>
-<g id="Vector4_2" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter54_f)">
+<g id="Vector4_2" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter54_f)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#0085FF"/>
 </g>
-<g id="Vector3_2" style="mix-blend-mode:hard-light" filter="url(#filter55_dddii)">
+<g id="Vector3_2" style={{mixBlendMode: 'hard-light'}} filter="url(#filter55_dddii)">
 <path d="M270 284.89H272.634V287.482C272.634 288.195 272.041 288.779 271.317 288.779C270.593 288.779 270 288.195 270 287.482V284.89ZM321.366 287.482C321.366 288.195 321.959 288.779 322.683 288.779C323.407 288.779 324 288.195 324 287.482V284.89H321.366V287.482ZM285.107 282.297L285.818 275.615L270.454 282.297H285.107ZM308.182 275.615L308.893 282.297H323.546L308.182 275.615ZM271.317 271.278C272.041 271.278 272.634 270.695 272.634 269.982V267.389H270V269.982C270 270.695 270.593 271.278 271.317 271.278ZM321.366 267.389V269.982C321.366 270.695 321.959 271.278 322.683 271.278C323.407 271.278 324 270.695 324 269.982V267.389H321.366ZM287.78 257.259L270.454 264.797H286.977L287.78 257.259ZM323.546 264.797L306.22 257.259L307.023 264.797H323.546ZM286.128 297.509L295.051 289.472L287.695 282.848L286.128 297.509ZM305.489 280.067L297 272.419L288.511 280.067L297 287.716L305.489 280.067ZM306.305 282.848L298.949 289.472L307.872 297.509L306.305 282.848ZM289.526 265.691L288.353 276.697L295.051 270.663L289.526 265.691ZM289.875 262.489L297 268.906L304.125 262.489L303.75 258.963H290.25L289.875 262.489ZM298.949 270.663L305.647 276.697L304.468 265.691L298.949 270.663ZM290.941 252.482L290.527 256.371H303.473L303.059 252.482H290.941ZM305.561 246H288.439V249.889H305.561V246ZM312.805 299.149H305.791L297 291.229L288.209 299.149H281.195C280.471 299.149 279.878 299.733 279.878 300.446C279.878 301.159 280.471 301.742 281.195 301.742H312.805C313.529 301.742 314.122 301.159 314.122 300.446C314.122 299.733 313.529 299.149 312.805 299.149Z" stroke="#FFF500" stroke-opacity="0.2" stroke-width="3" shape-rendering="crispEdges"/>
 </g>
 <g id="Vector2_2" filter="url(#filter56_f)">
@@ -789,16 +789,16 @@ function AnimationTestPage() {
 <g id="svg_batt">
 <g id="dead_batt_group_2">
 <g id="dead_circle_batt_group">
-<g id="dead_circle_batt6" style="mix-blend-mode:color-dodge" filter="url(#filter58_f)">
+<g id="dead_circle_batt6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter58_f)">
 <circle cx="61" cy="280" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_batt5" style="mix-blend-mode:color-dodge" filter="url(#filter59_f)">
+<g id="dead_circle_batt5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter59_f)">
 <circle cx="61" cy="280" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_batt4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter60_f)">
+<g id="dead_circle_batt4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter60_f)">
 <circle cx="61" cy="280" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="dead_circle_batt3" style="mix-blend-mode:hard-light" filter="url(#filter61_dddii)">
+<g id="dead_circle_batt3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter61_dddii)">
 <circle cx="61" cy="280" r="47" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="dead_circle_batt2" filter="url(#filter62_f)">
@@ -810,16 +810,16 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="dead_batt_image_2">
-<g id="Vector6_3" style="mix-blend-mode:color-dodge" filter="url(#filter64_f)">
+<g id="Vector6_3" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter64_f)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="Vector5_3" style="mix-blend-mode:color-dodge" filter="url(#filter65_f)">
+<g id="Vector5_3" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter65_f)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="Vector4_3" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter66_f)">
+<g id="Vector4_3" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter66_f)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#0085FF" stroke-opacity="0.2"/>
 </g>
-<g id="Vector3_3" style="mix-blend-mode:hard-light" filter="url(#filter67_dddii)">
+<g id="Vector3_3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter67_dddii)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3" shape-rendering="crispEdges"/>
 </g>
 <g id="Vector2_3" filter="url(#filter68_f)">
@@ -836,16 +836,16 @@ function AnimationTestPage() {
 </g>
 <g id="live_batt_group_2">
 <g id="live_circle_batt_group">
-<g id="live_circle_batt6" style="mix-blend-mode:color-dodge" filter="url(#filter71_f)">
+<g id="live_circle_batt6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter71_f)">
 <circle cx="61" cy="280" r="47" stroke="#05FF00" stroke-opacity="0.9" stroke-width="8"/>
 </g>
-<g id="live_circle_batt5" style="mix-blend-mode:color-dodge" filter="url(#filter72_f)">
+<g id="live_circle_batt5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter72_f)">
 <circle cx="61" cy="280" r="47" stroke="#05FF00" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="live_circle_batt4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter73_f)">
+<g id="live_circle_batt4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter73_f)">
 <circle cx="61" cy="280" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="live_circle_batt3" style="mix-blend-mode:hard-light" filter="url(#filter74_dddii)">
+<g id="live_circle_batt3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter74_dddii)">
 <circle cx="61" cy="280" r="47" stroke="#05FF00" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="live_circle_batt2" filter="url(#filter75_f)">
@@ -856,16 +856,16 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="live_batt_image_2">
-<g id="Vector6_4" style="mix-blend-mode:color-dodge" filter="url(#filter77_f)">
+<g id="Vector6_4" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter77_f)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#05FF00" stroke-width="8"/>
 </g>
-<g id="Vector5_4" style="mix-blend-mode:color-dodge" filter="url(#filter78_f)">
+<g id="Vector5_4" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter78_f)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#05FF00" stroke-width="3"/>
 </g>
-<g id="Vector4_4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter79_f)">
+<g id="Vector4_4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter79_f)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#0085FF" stroke-opacity="0.2"/>
 </g>
-<g id="Vector3_4" style="mix-blend-mode:hard-light" filter="url(#filter80_dddii)">
+<g id="Vector3_4" style={{mixBlendMode: 'hard-light'}} filter="url(#filter80_dddii)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M53.0593 247H69.839V250.263H75.8983V302H47V250.263H53.0593V247ZM67.5085 259.119L54.9237 276.365L60.9831 276.831L56.322 290.348L68.4407 273.568L62.8475 273.102L67.5085 260.051V259.119Z" stroke="#05FF00" stroke-opacity="0.2" stroke-width="3" shape-rendering="crispEdges"/>
 </g>
 <g id="Vector2_4" filter="url(#filter81_f)">
@@ -881,16 +881,16 @@ function AnimationTestPage() {
 <g id="svg_solar">
 <g id="dead_solar_group_2">
 <g id="dead_circle_solar_group">
-<g id="dead_circle_solar6" style="mix-blend-mode:color-dodge" filter="url(#filter83_f)">
+<g id="dead_circle_solar6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter83_f)">
 <circle cx="180" cy="77" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_solar5" style="mix-blend-mode:color-dodge" filter="url(#filter84_f)">
+<g id="dead_circle_solar5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter84_f)">
 <circle cx="180" cy="77" r="47" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="dead_circle_solar4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter85_f)">
+<g id="dead_circle_solar4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter85_f)">
 <circle cx="180" cy="77" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="dead_circle_solar3" style="mix-blend-mode:hard-light" filter="url(#filter86_dddii)">
+<g id="dead_circle_solar3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter86_dddii)">
 <circle cx="180" cy="77" r="47" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="dead_circle_solar2" filter="url(#filter87_f)">
@@ -902,7 +902,7 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="dead_solar_image_2">
-<g id="Group6" style="mix-blend-mode:color-dodge" filter="url(#filter89_f)">
+<g id="Group6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter89_f)">
 <path id="Vector_61" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_62" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_63" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" stroke="#DEDEDE" stroke-width="3"/>
@@ -918,7 +918,7 @@ function AnimationTestPage() {
 <path id="Vector_73" d="M153.146 84.5512C152.697 85.4501 153.339 86.4775 154.302 86.4775H167.914L170.097 76.3325H157.448L153.146 84.5512Z" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_74" d="M165.282 62.7203C164.768 62.7203 164.319 62.9772 164.126 63.4266L159.246 72.8653H170.868L173.051 62.7203H165.282Z" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="Group5" style="mix-blend-mode:color-dodge" filter="url(#filter90_f)">
+<g id="Group5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter90_f)">
 <path id="Vector_75" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" fill="#DEDEDE" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_76" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" fill="#DEDEDE" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_77" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" fill="#DEDEDE" stroke="#DEDEDE" stroke-width="3"/>
@@ -934,7 +934,7 @@ function AnimationTestPage() {
 <path id="Vector_87" d="M153.146 84.5512C152.697 85.4501 153.339 86.4775 154.302 86.4775H167.914L170.097 76.3325H157.448L153.146 84.5512Z" fill="#DEDEDE" stroke="#DEDEDE" stroke-width="3"/>
 <path id="Vector_88" d="M165.282 62.7203C164.768 62.7203 164.319 62.9772 164.126 63.4266L159.246 72.8653H170.868L173.051 62.7203H165.282Z" fill="#DEDEDE" stroke="#DEDEDE" stroke-width="3"/>
 </g>
-<g id="Group4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter91_f)">
+<g id="Group4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter91_f)">
 <path id="Vector_89" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" stroke="#0085FF"/>
 <path id="Vector_90" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" stroke="#0085FF"/>
 <path id="Vector_91" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" stroke="#0085FF"/>
@@ -950,7 +950,7 @@ function AnimationTestPage() {
 <path id="Vector_101" d="M153.146 84.5512C152.697 85.4501 153.339 86.4775 154.302 86.4775H167.914L170.097 76.3325H157.448L153.146 84.5512Z" stroke="#0085FF"/>
 <path id="Vector_102" d="M165.282 62.7203C164.768 62.7203 164.319 62.9772 164.126 63.4266L159.246 72.8653H170.868L173.051 62.7203H165.282Z" stroke="#0085FF"/>
 </g>
-<g id="Group3" style="mix-blend-mode:hard-light" filter="url(#filter92_dddii)">
+<g id="Group3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter92_dddii)">
 <path id="Vector_103" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3"/>
 <path id="Vector_104" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3"/>
 <path id="Vector_105" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" stroke="#DEDEDE" stroke-opacity="0.2" stroke-width="3"/>
@@ -1005,16 +1005,16 @@ function AnimationTestPage() {
 </g>
 <g id="blur_solar_group">
 <g id="blur_circle_solar_group">
-<g id="blur_circle_solar6" style="mix-blend-mode:color-dodge" filter="url(#filter96_f)">
+<g id="blur_circle_solar6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter96_f)">
 <circle cx="180" cy="77" r="47" stroke="#FF007A" stroke-opacity="0.9" stroke-width="8"/>
 </g>
-<g id="blur_circle_solar5" style="mix-blend-mode:color-dodge" filter="url(#filter97_f)">
+<g id="blur_circle_solar5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter97_f)">
 <circle cx="180" cy="77" r="47" stroke="#FF007A" stroke-opacity="0.9" stroke-width="3"/>
 </g>
-<g id="blur_circle_solar4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter98_f)">
+<g id="blur_circle_solar4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter98_f)">
 <circle cx="180" cy="77" r="47" stroke="#0085FF" stroke-opacity="0.9" stroke-width="2"/>
 </g>
-<g id="blur_circle_solar3" style="mix-blend-mode:hard-light" filter="url(#filter99_dddii)">
+<g id="blur_circle_solar3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter99_dddii)">
 <circle cx="180" cy="77" r="47" stroke="#FF007A" stroke-opacity="0.2" stroke-width="3.5"/>
 </g>
 <g id="blur_circle_solar2" filter="url(#filter100_f)">
@@ -1025,7 +1025,7 @@ function AnimationTestPage() {
 </g>
 </g>
 <g id="blur_solar_image">
-<g id="bGroup6" style="mix-blend-mode:color-dodge" filter="url(#filter102_f)">
+<g id="bGroup6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter102_f)">
 <path id="Vector_145" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" stroke="#FF007A" stroke-width="8"/>
 <path id="Vector_146" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" stroke="#FF007A" stroke-width="8"/>
 <path id="Vector_147" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" stroke="#FF007A" stroke-width="8"/>
@@ -1041,7 +1041,7 @@ function AnimationTestPage() {
 <path id="Vector_157" d="M153.146 84.5512C152.697 85.4501 153.339 86.4775 154.302 86.4775H167.914L170.097 76.3325H157.448L153.146 84.5512Z" stroke="#FF007A" stroke-width="8"/>
 <path id="Vector_158" d="M165.282 62.7203C164.768 62.7203 164.319 62.9772 164.126 63.4266L159.246 72.8653H170.868L173.051 62.7203H165.282Z" stroke="#FF007A" stroke-width="8"/>
 </g>
-<g id="bGroup5" style="mix-blend-mode:color-dodge" filter="url(#filter103_f)">
+<g id="bGroup5" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter103_f)">
 <path id="Vector_159" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" fill="#DEDEDE" stroke="#FF007A" stroke-width="3"/>
 <path id="Vector_160" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" fill="#DEDEDE" stroke="#FF007A" stroke-width="3"/>
 <path id="Vector_161" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" fill="#DEDEDE" stroke="#FF007A" stroke-width="3"/>
@@ -1057,7 +1057,7 @@ function AnimationTestPage() {
 <path id="Vector_171" d="M153.146 84.5512C152.697 85.4501 153.339 86.4775 154.302 86.4775H167.914L170.097 76.3325H157.448L153.146 84.5512Z" fill="#DEDEDE" stroke="#FF007A" stroke-width="3"/>
 <path id="Vector_172" d="M165.282 62.7203C164.768 62.7203 164.319 62.9772 164.126 63.4266L159.246 72.8653H170.868L173.051 62.7203H165.282Z" fill="#DEDEDE" stroke="#FF007A" stroke-width="3"/>
 </g>
-<g id="bGroup4" style="mix-blend-mode:multiply" opacity="0.2" filter="url(#filter104_f)">
+<g id="bGroup4" style={{mixBlendMode: 'multiply'}} opacity="0.2" filter="url(#filter104_f)">
 <path id="Vector_173" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" stroke="#0085FF"/>
 <path id="Vector_174" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" stroke="#0085FF"/>
 <path id="Vector_175" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" stroke="#0085FF"/>
@@ -1073,7 +1073,7 @@ function AnimationTestPage() {
 <path id="Vector_185" d="M153.146 84.5512C152.697 85.4501 153.339 86.4775 154.302 86.4775H167.914L170.097 76.3325H157.448L153.146 84.5512Z" stroke="#0085FF"/>
 <path id="Vector_186" d="M165.282 62.7203C164.768 62.7203 164.319 62.9772 164.126 63.4266L159.246 72.8653H170.868L173.051 62.7203H165.282Z" stroke="#0085FF"/>
 </g>
-<g id="bGroup3" style="mix-blend-mode:hard-light" filter="url(#filter105_dddii)">
+<g id="bGroup3" style={{mixBlendMode: 'hard-light'}} filter="url(#filter105_dddii)">
 <path id="Vector_187" d="M190.195 57.5837C190.195 52.0617 185.7 47.5671 180.178 47.5671C174.656 47.5671 170.162 52.0617 170.162 57.5837C170.162 58.1616 170.226 58.7394 170.29 59.3173H189.938C190.131 58.7394 190.195 58.1616 190.195 57.5837Z" stroke="#FF007A" stroke-opacity="0.2" stroke-width="3"/>
 <path id="Vector_188" d="M180.242 44.9345C181.206 44.9345 181.976 44.164 181.976 43.2009V39.7336C181.976 38.7705 181.206 38 180.242 38C179.279 38 178.509 38.7705 178.509 39.7336V43.2651C178.509 44.164 179.279 44.9345 180.242 44.9345Z" stroke="#FF007A" stroke-opacity="0.2" stroke-width="3"/>
 <path id="Vector_189" d="M171.574 45.9619C171.895 46.5397 172.473 46.7966 173.051 46.7966C173.372 46.7966 173.629 46.7324 173.886 46.5397C174.72 46.0903 174.977 44.9987 174.528 44.2282L172.794 41.2104C172.345 40.3757 171.253 40.1189 170.483 40.5683C169.648 41.0178 169.391 42.1093 169.841 42.8798L171.574 45.9619Z" stroke="#FF007A" stroke-opacity="0.2" stroke-width="3"/>
