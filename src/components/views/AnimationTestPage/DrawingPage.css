@@ -19,13 +19,13 @@
 circle.solarToBatt {
     motion-path: path('M143.075 76C53.9999 101.5 28.5 187 45.6711 246.747');
     offset-path: path('M143.075 76C53.9999 101.5 28.5 187 45.6711 246.747');
-    animation: moveTo 2s linear forwards infinite, colorSolarToBatt 3s linear forwards infinite;
+    animation: moveTo 2s linear forwards infinite, colorSolarToBatt 2s linear forwards infinite;
 }
 
 circle.solarToGrid {
     motion-path: path('M217.662 76C306.737 101.5 332.237 187 315.066 246.747');
     offset-path: path('M217.662 76C306.737 101.5 332.237 187 315.066 246.747');
-    animation: moveTo 2s linear forwards infinite, colorSolarToGrid 3s linear forwards infinite;
+    animation: moveTo 2s linear forwards infinite, colorSolarToGrid 2s linear forwards infinite;
 }
 
 circle.solarToHome {
@@ -50,7 +50,7 @@ circle.battToHome {
 circle.gridToBatt {
     motion-path: path('M279.5 308.288C213.213 373.024 123.395 352.808 80.0071 308.288');
     offset-path: path('M279.5 308.288C213.213 373.024 123.395 352.808 80.0071 308.288');
-    animation: moveTo 2s linear forwards infinite, colorGridToBatt 3s linear forwards infinite;
+    animation: moveTo 2s linear forwards infinite, colorGridToBatt 2s linear forwards infinite;
 }
 
 circle.gridToHome {

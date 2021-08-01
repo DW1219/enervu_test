@@ -54,9 +54,6 @@ function AnimationTestPage() {
     const [BlurBatt, setBlurBatt] = useState("hidden")
     const [BlurGrid, setBlurGrid] = useState("hidden")
 
-    const [WhiteThemeMode, setWhiteThemeMode] = useState("visible")
-    const [DarkThemeMode, setDarkThemeMode] = useState("hidden")
-
 
     const [ThemeMode, setThemeMode] = useState({
         currentTheme: "white",
@@ -68,7 +65,11 @@ function AnimationTestPage() {
         colorLiveHomeImage: "#00D1FF", //blue
         colorLiveBattImage: "#05FF00", //green
         colorLiveSolarImage: "#FF007A", //red
-        colorLiveKwFont: "#555555"
+        colorLiveKwFont: "#555555",
+        whiteThemeMode: "visible",
+        darkThemeMode: "hidden",
+        smallCircleSize: "3",
+        largeCircleSize: "18"
     })
 
 
@@ -150,12 +151,16 @@ function AnimationTestPage() {
         if (ThemeMode.currentTheme === "white") {            //Change to dark mode
             updateThemeValue["currentTheme"] = "dark"
             updateThemeValue["colorFillIn"] = "#333333"
-            updateThemeValue["colorLiveGridImage"] = "white"
-            updateThemeValue["colorLiveHomeImage"] = "white"
-            updateThemeValue["colorLiveBattImage"] = "white"
-            updateThemeValue["colorLiveSolarImage"] = "white"
+            //updateThemeValue["colorLiveGridImage"] = "white"
+            //updateThemeValue["colorLiveHomeImage"] = "white"
+            //updateThemeValue["colorLiveBattImage"] = "white"
+            //updateThemeValue["colorLiveSolarImage"] = "white"
             updateThemeValue["solarSwitchFont"] = "#FF007A"
             updateThemeValue["colorLiveKwFont"] = "white"
+            updateThemeValue["smallCircleSize"] = "8"
+            updateThemeValue["largeCircleSize"] = "20"
+            updateThemeValue["darkThemeMode"] = "visible"
+            updateThemeValue["whiteThemeMode"] = "hidden"
             setThemeMode(updateThemeValue)
             //console.log(updateThemeValue)
             //console.log(ThemeMode)
@@ -163,12 +168,16 @@ function AnimationTestPage() {
         else {                                               //Change to white mode
             updateThemeValue["currentTheme"] = "white"       
             updateThemeValue["colorFillIn"] = "white"
-            updateThemeValue["colorLiveGridImage"] = "#FFF500"
-            updateThemeValue["colorLiveHomeImage"] = "#00D1FF"
-            updateThemeValue["colorLiveBattImage"] = "#05FF00"
-            updateThemeValue["colorLiveSolarImage"] = "#FF007A"
+            //updateThemeValue["colorLiveGridImage"] = "#FFF500"
+            //updateThemeValue["colorLiveHomeImage"] = "#00D1FF"
+            //updateThemeValue["colorLiveBattImage"] = "#05FF00"
+            //updateThemeValue["colorLiveSolarImage"] = "#FF007A"
             updateThemeValue["solarSwitchFont"] = "#FF0066"
             updateThemeValue["colorLiveKwFont"] = "#555555"
+            updateThemeValue["smallCircleSize"] = "3"
+            updateThemeValue["largeCircleSize"] = "18"
+            updateThemeValue["darkThemeMode"] = "hidden"
+            updateThemeValue["whiteThemeMode"] = "visible"
             setThemeMode(updateThemeValue)
             //console.log(updateThemeValue)
             //console.log(ThemeMode)
@@ -320,7 +329,7 @@ function AnimationTestPage() {
                 <svg width="360" height="380" viewBox="0 0 360 380" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={viewModeChange}>
 
                     <g id="lg_enervu_frame" clip-path="url(#clip0)">
-<g id="whiteMode_frame" visibility={WhiteThemeMode}>
+<g id="whiteMode_frame" visibility={ThemeMode.whiteThemeMode}>
                         <g id="drawing_line_group">
                             <path id="curve_solarToCharge" d="M143.075 76C53.9999 101.5 28.5 187 45.6711 246.747" stroke="url(#paint0_linear)" visibility={LineSolarToBatt} />
                             <path id="curve_solarToGrid" d="M217.662 76C306.737 101.5 332.237 187 315.066 246.747" stroke="url(#paint1_linear)" visibility={LineSolarToGrid} />
@@ -330,19 +339,19 @@ function AnimationTestPage() {
                             <path id="line_gridToHome" d="M280 264L198 217" stroke="url(#paint5_linear)" visibility={LineGridToHome} />
                         </g>
                         <g id="moving_circle_group">
-                            <circle class="solarToGrid" r="3" fill="white" fill-opacity="0.8" visibility={LiveSolarToGrid}></circle>
-                            <circle class="solarToGrid" r="16" fill="white" fill-opacity="0.3" visibility={LiveSolarToGrid}></circle>
-                            <circle class="solarToHome" r="3" fill="white" fill-opacity="0.8" visibility={LiveSolarToHome}></circle>
-                            <circle class="solarToHome" r="16" fill="white" fill-opacity="0.3" visibility={LiveSolarToHome}></circle>
-                            <circle class="solarToBatt" r="3" fill="white" fill-opacity="0.8" visibility={LiveSolarToBatt}></circle>
-                            <circle class="solarToBatt" r="16" fill="white" fill-opacity="0.3" visibility={LiveSolarToBatt}></circle>
+                            <circle class="solarToGrid" r={ThemeMode.smallCircleSize} fill="white" fill-opacity="0.8" visibility={LiveSolarToGrid}></circle>
+                            <circle class="solarToGrid" r={ThemeMode.largeCircleSize} fill="white" fill-opacity="0.3" visibility={LiveSolarToGrid}></circle>
+                            <circle class="solarToHome" r={ThemeMode.smallCircleSize} fill="white" fill-opacity="0.8" visibility={LiveSolarToHome}></circle>
+                            <circle class="solarToHome" r={ThemeMode.largeCircleSize} fill="white" fill-opacity="0.3" visibility={LiveSolarToHome}></circle>
+                            <circle class="solarToBatt" r={ThemeMode.smallCircleSize} fill="white" fill-opacity="0.8" visibility={LiveSolarToBatt}></circle>
+                            <circle class="solarToBatt" r={ThemeMode.largeCircleSize} fill="white" fill-opacity="0.3" visibility={LiveSolarToBatt}></circle>
 
-                            <circle class="battToHome" r="3" fill="white" fill-opacity="0.8" visibility={LiveBattToHome}></circle>
-                            <circle class="battToHome" r="16" fill="white" fill-opacity="0.3" visibility={LiveBattToHome}></circle>
-                            <circle class="gridToBatt" r="3" fill="white" fill-opacity="0.8" visibility={LiveGridToBatt}></circle>
-                            <circle class="gridToBatt" r="16" fill="white" fill-opacity="0.3" visibility={LiveGridToBatt}></circle>
-                            <circle class="gridToHome" r="3" fill="white" fill-opacity="0.8" visibility={LiveGridToHome}></circle>
-                            <circle class="gridToHome" r="16" fill="white" fill-opacity="0.3" visibility={LiveGridToHome}></circle>
+                            <circle class="battToHome" r={ThemeMode.smallCircleSize} fill="white" fill-opacity="0.8" visibility={LiveBattToHome}></circle>
+                            <circle class="battToHome" r={ThemeMode.largeCircleSize} fill="white" fill-opacity="0.3" visibility={LiveBattToHome}></circle>
+                            <circle class="gridToBatt" r={ThemeMode.smallCircleSize} fill="white" fill-opacity="0.8" visibility={LiveGridToBatt}></circle>
+                            <circle class="gridToBatt" r={ThemeMode.largeCircleSize} fill="white" fill-opacity="0.3" visibility={LiveGridToBatt}></circle>
+                            <circle class="gridToHome" r={ThemeMode.smallCircleSize} fill="white" fill-opacity="0.8" visibility={LiveGridToHome}></circle>
+                            <circle class="gridToHome" r={ThemeMode.largeCircleSize} fill="white" fill-opacity="0.3" visibility={LiveGridToHome}></circle>
                         </g>
 <g id="dead_grid_group">
 <circle id="dead_circle_grid" cx="297" cy="280" r="47" fill="white" stroke="#DEDEDE" stroke-opacity="0.9" stroke-width="2"/>
@@ -547,7 +556,7 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="darkMode_frame" visibility={DarkThemeMode}>
+<g id="darkMode_frame" visibility={ThemeMode.darkThemeMode}>
 <g id="drawing_line_group_2">
 <g id="curve_solarToBatt">
 <g id="curve_solarToBatt6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter3_f)">
