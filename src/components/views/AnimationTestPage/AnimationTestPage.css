@@ -35,10 +35,6 @@ circle.solarToHome {
 }
 
 
-#blur_solar_group{
-    animation: moveTo 4s linear forwards infinite
-}
-
 /*  Batt Part  */
 circle.battToHome {
     motion-path: path('M80 263L163 218');
@@ -112,68 +108,84 @@ circle.gridToHome {
 
 
 /* Color Animation - Solar To Something */
-@keyframes colorSolarToBatt{
-    0%{
-        fill:#FF003D;
+@keyframes colorSolarToBatt {
+    0% {
+        fill: #FF007A;
     }
-    90%{
-        fill:#05FF00;
+
+    90% {
+        fill: #05FF00;
     }
-    100%{
-        fill:#05FF00;
-    }
-}
-@keyframes colorSolarToGrid{
-    0%{
-        fill:#FF003D;
-    }
-    90%{
-        fill:#FFF500;
-    }
-    100%{
-        fill:#FFF500;
+
+    100% {
+        fill: #05FF00;
     }
 }
-@keyframes colorSolarToHome{
-    0%{
-        fill:#FF003D;
+
+@keyframes colorSolarToGrid {
+    0% {
+        fill: #FF007A;
     }
-    100%{
-        fill:#0085ff;
+
+    90% {
+        fill: #FFF500;
+    }
+
+    100% {
+        fill: #FFF500;
     }
 }
+
+@keyframes colorSolarToHome {
+    0% {
+        fill: #FF007A;
+    }
+
+    100% {
+        fill: #00D1FF;
+    }
+}
+
 /* Color Animation - Batt To Something */
-@keyframes colorBattToHome{
-    0%{
-        fill:#05FF00;
+@keyframes colorBattToHome {
+    0% {
+        fill: #05FF00;
     }
-    90%{
-        fill:#0085ff;
+
+    90% {
+        fill: #00D1FF;
     }
-    100%{
-        fill:#0085ff;
+
+    100% {
+        fill: #00D1FF;
     }
 }
+
 /* Color Animation - Grid To Something */
-@keyframes colorGridToBatt{
-    0%{
-        fill:#FFF500;
+@keyframes colorGridToBatt {
+    0% {
+        fill: #FFF500;
     }
-    30%{
-        fill:#FFF500;
+
+    30% {
+        fill: #FFF500;
     }
-    100%{
-        fill:#05FF00;
+
+    100% {
+        fill: #05FF00;
     }
 }
-@keyframes colorGridToHome{
-    0%{
-        fill:#FFF500;
+
+@keyframes colorGridToHome {
+    0% {
+        fill: #FFF500;
     }
-    30%{
-        fill:#FFF500;
+
+    30% {
+        fill: #FFF500;
     }
-    100%{
-        fill:#0085ff;
+
+    100% {
+        fill: #00D1FF;
     }
 }
