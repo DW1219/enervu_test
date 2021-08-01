@@ -157,7 +157,7 @@ function AnimationTestPage() {
             //updateThemeValue["colorLiveSolarImage"] = "white"
             updateThemeValue["solarSwitchFont"] = "#FF007A"
             updateThemeValue["colorLiveKwFont"] = "white"
-            updateThemeValue["smallCircleSize"] = "8"
+            updateThemeValue["smallCircleSize"] = "4"
             updateThemeValue["largeCircleSize"] = "20"
             updateThemeValue["darkThemeMode"] = "visible"
             updateThemeValue["whiteThemeMode"] = "hidden"
@@ -739,7 +739,7 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="blur_circle_grid_2" filter="url(#filter45_dd)">
+<g id="blur_circle_grid_2" filter="url(#filter45_dd)" class="onlyImageAnimation">
 <circle cx="297" cy="280" r="47" fill="#333333"/>
 </g>
 <g id="live_grid_group_2">
@@ -831,7 +831,7 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="blur_circle_batt_2" filter="url(#filter70_dd)">
+<g id="blur_circle_batt_2" filter="url(#filter70_dd)" class="onlyImageAnimation">
 <circle cx="61" cy="280" r="47" fill="#333333"/>
 </g>
 <g id="live_batt_group_2">
@@ -1000,7 +1000,7 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="blur_circle_solar_2" filter="url(#filter95_dd)">
+<g id="blur_circle_solar_2" filter="url(#filter95_dd)" class="onlyImageAnimation">
 <circle cx="180" cy="77" r="47" fill="#333333"/>
 </g>
 <g id="blur_solar_group">
@@ -1127,13 +1127,13 @@ function AnimationTestPage() {
 </g>
 </g>
                     <g id="kw_text">
-                        <text id="solarKW" text-anchor="middle" x="180" y="116" fill={ThemeMode.colorLiveKwFont} font-size="14"        
+                        <text id="solarKW" text-anchor="middle" x="180" y="114" fill={ThemeMode.colorLiveKwFont} font-size="12"        
                         fontFamily="Arial" visibility={LiveSolar}>10 kW</text>
-                            <text id="battKW" text-anchor="middle" x="62" y="318" fill={ThemeMode.colorLiveKwFont} font-size="14"
+                            <text id="battKW" text-anchor="middle" x="62" y="318" fill={ThemeMode.colorLiveKwFont} font-size="12"
                             fontFamily="Arial" visibility={LiveBatt}>5 kW</text>
-                            <text id="gridKW" text-anchor="middle" x="300" y="316" fill={ThemeMode.colorLiveKwFont} font-size="14"
+                            <text id="gridKW" text-anchor="middle" x="300" y="318" fill={ThemeMode.colorLiveKwFont} font-size="12"
                             fontFamily="Arial" visibility={LiveGrid}>6 kW</text>
-                            <text id="homeKW" text-anchor="middle" x="180" y="246" fill={ThemeMode.colorLiveKwFont} font-size="14"
+                            <text id="homeKW" text-anchor="middle" x="180" y="248" fill={ThemeMode.colorLiveKwFont} font-size="12"
                             fontFamily="Arial" visibility={LiveHome}>2 kW</text>
                     </g>
                     <defs>
@@ -1585,7 +1585,7 @@ function AnimationTestPage() {
 <filter id="filter45_dd" x="241" y="224" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="5" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
+<feMorphology id="dark_grid_blur" radius="0" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="2"/>
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.960784 0 0 0 0 0 0 0 0 0.6 0"/>
@@ -1597,6 +1597,14 @@ function AnimationTestPage() {
 <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
 </filter>
+<animate
+                            xlinkHref="#dark_grid_blur"
+                            attributeName="radius"
+                            from="6"
+                            to="2"
+                            dur="2s"
+                            begin="0s" repeatCount="indefinite"
+                        />
 <filter id="filter46_f" x="240" y="223" width="114" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
@@ -1830,9 +1838,9 @@ function AnimationTestPage() {
 <filter id="filter70_dd" x="5" y="224" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="4" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
+<feMorphology id="dark_batt_blur" radius="0" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
 <feOffset/>
-<feGaussianBlur stdDeviation="2.5"/>
+<feGaussianBlur stdDeviation="2"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0.0196078 0 0 0 0 1 0 0 0 0 0 0 0 0 0.6 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -1842,6 +1850,14 @@ function AnimationTestPage() {
 <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
 </filter>
+<animate
+                            xlinkHref="#dark_batt_blur"
+                            attributeName="radius"
+                            from="6"
+                            to="2"
+                            dur="2s"
+                            begin="0s" repeatCount="indefinite"
+                        />
 <filter id="filter71_f" x="4" y="223" width="114" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
@@ -2075,7 +2091,7 @@ function AnimationTestPage() {
 <filter id="filter95_dd" x="124" y="21" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="5" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
+<feMorphology id="dark_solar_blur" radius="0" operator="dilate" in="SourceAlpha" result="effect1_dropShadow"/>
 <feOffset/>
 <feGaussianBlur stdDeviation="2"/>
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.478431 0 0 0 0.6 0"/>
@@ -2087,6 +2103,14 @@ function AnimationTestPage() {
 <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
 </filter>
+<animate
+                            xlinkHref="#dark_solar_blur"
+                            attributeName="radius"
+                            from="6"
+                            to="2"
+                            dur="2s"
+                            begin="0s" repeatCount="indefinite"
+                        />
 <filter id="filter96_f" x="123" y="20" width="114" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>

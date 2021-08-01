@@ -85,7 +85,7 @@ circle.gridToHome {
     }
 
     30% {
-        opacity: 0.4;
+        opacity: 0.7;
     }
 
     40% {
@@ -97,7 +97,7 @@ circle.gridToHome {
     }
 
     80% {
-        opacity: 0.4;
+        opacity: 0.7;
     }
 
     100% {
