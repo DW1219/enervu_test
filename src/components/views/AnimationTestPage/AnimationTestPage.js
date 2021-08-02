@@ -7,6 +7,9 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 
 
+
+var tempDarkComponentControl = "";
+
 function AnimationTestPage() {
     console.log("렌더링테스트")
 
@@ -45,7 +48,6 @@ function AnimationTestPage() {
     const [LiveGridToBatt, setLiveGridToBatt] = useState("hidden")
     const [LiveGridToHome, setLiveGridToHome] = useState("hidden")
 
-
     const [LiveSolar, setLiveSolar] = useState("hidden")
     const [LiveBatt, setLiveBatt] = useState("hidden")
     const [LiveGrid, setLiveGrid] = useState("hidden")
@@ -54,6 +56,37 @@ function AnimationTestPage() {
     const [BlurBatt, setBlurBatt] = useState("hidden")
     const [BlurGrid, setBlurGrid] = useState("hidden")
 
+
+const [DrawingDarkComponent, setDrawingDarkComponent] = useState({
+    lineSolarToBattDark: "hidden",
+    lineSolarToHomeDark: "hidden",
+    lineSolarToGridDark: "hidden",
+    lineBattToHomeDark: "hidden",
+    lineGridToBattDark: "hidden",
+    lineGridToHomeDark: "hidden",
+    liveSolarDark: "hidden",
+    liveBattDark: "hidden",
+    liveGridDark: "hidden",
+    liveHomeDark: "hidden",
+    blurSolarDark: "hidden",
+    blurBattDark: "hidden",
+    blurGridDark: "hidden"
+})
+const tempAllDarkComponentHidden = {
+    lineSolarToBattDark: "hidden",
+    lineSolarToHomeDark: "hidden",
+    lineSolarToGridDark: "hidden",
+    lineBattToHomeDark: "hidden",
+    lineGridToBattDark: "hidden",
+    lineGridToHomeDark: "hidden",
+    liveSolarDark: "hidden",
+    liveBattDark: "hidden",
+    liveGridDark: "hidden",
+    liveHomeDark: "hidden",
+    blurSolarDark: "hidden",
+    blurBattDark: "hidden",
+    blurGridDark: "hidden"
+}
 
     const [ThemeMode, setThemeMode] = useState({
         currentTheme: "white",
@@ -71,6 +104,7 @@ function AnimationTestPage() {
         smallCircleSize: "3",
         largeCircleSize: "18"
     })
+    
 
 
     const handleChange = (event) => {
@@ -164,6 +198,8 @@ function AnimationTestPage() {
             setThemeMode(updateThemeValue)
             //console.log(updateThemeValue)
             //console.log(ThemeMode)
+            setDrawingDarkComponent(tempDarkComponentControl)
+            console.log(tempDarkComponentControl)
         }
         else {                                               //Change to white mode
             updateThemeValue["currentTheme"] = "white"       
@@ -179,7 +215,8 @@ function AnimationTestPage() {
             updateThemeValue["darkThemeMode"] = "hidden"
             updateThemeValue["whiteThemeMode"] = "visible"
             setThemeMode(updateThemeValue)
-            //console.log(updateThemeValue)
+            setDrawingDarkComponent(tempAllDarkComponentHidden)
+            console.log(tempAllDarkComponentHidden)
             //console.log(ThemeMode)
         }
 
@@ -191,6 +228,11 @@ function AnimationTestPage() {
         setBlurSolar(flag)
         setLiveSolarToBatt(flag)
         setLiveBatt(flag)
+        tempDarkComponentControl["lineSolarToBattDark"] = flag
+        tempDarkComponentControl["liveSolarDark"] = flag
+        tempDarkComponentControl["blurSolarDark"] = flag
+        tempDarkComponentControl["liveBattDark"] = flag
+        
     }
     const commonSolarToHomeControl = (flag) => {
         setLineSolarToHome(flag)
@@ -198,6 +240,10 @@ function AnimationTestPage() {
         setBlurSolar(flag)
         setLiveSolarToHome(flag)
         setLiveHome(flag)
+        tempDarkComponentControl["lineSolarToHomeDark"] = flag
+        tempDarkComponentControl["liveSolarDark"] = flag
+        tempDarkComponentControl["blurSolarDark"] = flag
+        tempDarkComponentControl["liveHomeDark"] = flag
     }
     const commonSolarToGridControl = (flag) => {
         setLineSolarToGrid(flag)
@@ -205,6 +251,10 @@ function AnimationTestPage() {
         setBlurSolar(flag)
         setLiveSolarToGrid(flag)
         setLiveGrid(flag)
+        tempDarkComponentControl["lineSolarToHomeGrid"] = flag
+        tempDarkComponentControl["liveSolarDark"] = flag
+        tempDarkComponentControl["blurSolarDark"] = flag
+        tempDarkComponentControl["liveGridDark"] = flag
     }
     const commonBattToHomeControl = (flag) => {
         setLineBattToHome(flag)
@@ -212,6 +262,10 @@ function AnimationTestPage() {
         setBlurBatt(flag)
         setLiveBattToHome(flag)
         setLiveHome(flag)
+        tempDarkComponentControl["lineBattToHomeDark"] = flag
+        tempDarkComponentControl["liveBattDark"] = flag
+        tempDarkComponentControl["blurBattDark"] = flag
+        tempDarkComponentControl["liveHomeDark"] = flag
     }
     const commonGridToHomeControl = (flag) => {
         setLineGridToHome(flag)
@@ -219,6 +273,10 @@ function AnimationTestPage() {
         setBlurGrid(flag)
         setLiveGridToHome(flag)
         setLiveHome(flag)
+        tempDarkComponentControl["lineGridToHomeDark"] = flag
+        tempDarkComponentControl["liveGridDark"] = flag
+        tempDarkComponentControl["blurGridDark"] = flag
+        tempDarkComponentControl["liveHomeDark"] = flag
     }
     const commonGridToBattControl = (flag) => {
         setLineGridToBatt(flag)
@@ -226,6 +284,10 @@ function AnimationTestPage() {
         setBlurGrid(flag)
         setLiveGridToBatt(flag)
         setLiveBatt(flag)
+        tempDarkComponentControl["lineGridToBattDark"] = flag
+        tempDarkComponentControl["liveGridDark"] = flag
+        tempDarkComponentControl["blurGridDark"] = flag
+        tempDarkComponentControl["liveBattDark"] = flag
     }
 //    const commonOnlyForHomeControl = (flag) => {   
 //    }
@@ -233,17 +295,22 @@ function AnimationTestPage() {
 
     useEffect(() => {
             console.log("여기는 hook 안입니다")
-        
+            tempDarkComponentControl = {...DrawingDarkComponent}
+            //console.log(tempDarkComponentControl)
         if (SwitchState.checkedSolarToBatt === true) {                     // SolarToBatt : ON
             commonSolarToBattControl("visible")
+
         } else {   // (SwitchState.checkedSolarToBatt === false)           // SolarToBatt : OFF
             commonSolarToBattControl("hidden")
             if (SwitchState.checkedSolarToHome === true || SwitchState.checkedSolarToGrid === true) {
                 setLiveSolar("visible")
                 setBlurSolar("visible")
+                tempDarkComponentControl["liveSolarDark"] = "visible"
+                tempDarkComponentControl["blurSolarDark"] = "visible"
             }
             if (SwitchState.checkedBattToHome === true || SwitchState.checkedGridToBatt === true) {
                 setLiveBatt("visible")
+                tempDarkComponentControl["liveBattDark"] = "visible"
             }
         }
 
@@ -254,9 +321,12 @@ function AnimationTestPage() {
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedSolarToGrid === true) {
                 setLiveSolar("visible")
                 setBlurSolar("visible")
+                tempDarkComponentControl["liveSolarDark"] = "visible"
+                tempDarkComponentControl["blurSolarDark"] = "visible"
             }
             if (SwitchState.checkedBattToHome === true || SwitchState.checkedGridToHome === true) {
                 setLiveHome("visible")
+                tempDarkComponentControl["liveHomeDark"] = "visible"
             }
         }
         
@@ -268,9 +338,12 @@ function AnimationTestPage() {
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedSolarToHome === true) {
                 setLiveSolar("visible")
                 setBlurSolar("visible")
+                tempDarkComponentControl["liveSolarDark"] = "visible"
+                tempDarkComponentControl["blurSolarDark"] = "visible"
             }
             if (SwitchState.checkedBattToHome === true || SwitchState.checkedGridToHome === true) {
                 setLiveHome("visible")
+                tempDarkComponentControl["liveHomeDark"] = "visible"
             }
         }
 
@@ -280,9 +353,11 @@ function AnimationTestPage() {
             commonBattToHomeControl("hidden")
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedGridToBatt === true) {
                 setLiveBatt("visible")
+                tempDarkComponentControl["liveBattDark"] = "visible"
             }
             if (SwitchState.checkedSolarToHome === true || SwitchState.checkedGridToHome === true) {
                 setLiveHome("visible")
+                tempDarkComponentControl["liveHomeDark"] = "visible"
             }
         }
 
@@ -292,9 +367,11 @@ function AnimationTestPage() {
             commonGridToHomeControl("hidden")
             if (SwitchState.checkedSolarToGrid === true) {
                 setLiveGrid("visible")
+                tempDarkComponentControl["liveGridDark"] = "visible"
             }
             if (SwitchState.checkedSolarToHome === true || SwitchState.checkedBattToHome === true) {
                 setLiveHome("visible")
+                tempDarkComponentControl["liveHomeDark"] = "visible"
             }
         }
 
@@ -305,19 +382,24 @@ function AnimationTestPage() {
             if (SwitchState.checkedGridToHome === true) {
                 setLiveGrid("visible")
                 setBlurGrid("visible")
+                tempDarkComponentControl["liveGridDark"] = "visible"
+                tempDarkComponentControl["blurGridDark"] = "visible"
             }
             if (SwitchState.checkedSolarToGrid === true) {
                 setLiveGrid("visible")
+                tempDarkComponentControl["liveGridDark"] = "visible"
             }
             if (SwitchState.checkedSolarToBatt === true || SwitchState.checkedBattToHome === true) {
                 setLiveBatt("visible")
+                tempDarkComponentControl["liveBattDark"] = "visible"
             }
         }
 
-
-
+        if(ThemeMode.currentTheme === "dark"){ setDrawingDarkComponent(tempDarkComponentControl) }
         
     }, [SwitchState])
+
+
 
     console.log("이곳은 렌더링의 마지막부분입니다")
     //console.log(ThemeMode)
@@ -558,37 +640,37 @@ function AnimationTestPage() {
 </g>
 <g id="darkMode_frame" visibility={ThemeMode.darkThemeMode}>
 <g id="drawing_line_group_2">
-<g id="curve_solarToBatt">
+<g id="curve_solarToBattGroup" visibility={DrawingDarkComponent.lineSolarToBattDark}>
 <path id="curve_solarToBatt2" d="M143.085 76.0002C54.0096 101.5 28.5097 187 45.6808 246.747" stroke="url(#paint6_linear)"/>
 <g id="curve_solarToBatt1" filter="url(#filter3_f)">
 <path d="M143.085 76.0002C54.0096 101.5 28.5097 187 45.6808 246.747" stroke="white" stroke-width="0.5"/>
 </g>
 </g>
-<g id="curve_solarToGridGroup">
+<g id="curve_solarToGridGroup" visibility={DrawingDarkComponent.lineSolarToGridDark}>
 <path id="curve_solarToGrid2" d="M217.671 76C306.747 101.5 332.247 187 315.076 246.747" stroke="url(#paint7_linear)"/>
 <g id="curve_solarToGrid1" filter="url(#filter4_f)">
 <path d="M217.671 76.0008C306.747 101.501 332.247 187.001 315.076 246.747" stroke="white" stroke-width="0.5"/>
 </g>
 </g>
-<g id="curve_gridToBattGroup">
+<g id="curve_gridToBattGroup" visibility={DrawingDarkComponent.lineGridToBattDark}>
 <path id="curve_gridToBatt2" d="M279.5 308.283C213.213 373.019 123.395 352.803 80.0068 308.283" stroke="url(#paint8_linear)"/>
 <g id="curve_gridToBatt1" filter="url(#filter5_f)">
 <path d="M279.5 308.283C213.213 373.019 123.395 352.803 80.0073 308.283" stroke="white" stroke-width="0.5"/>
 </g>
 </g>
-<g id="line_solarToHomeGroup">
+<g id="line_solarToHomeGroup" visibility={DrawingDarkComponent.lineSolarToHomeDark}>
 <path id="line_solarToHome2" d="M180 106L180 190" stroke="url(#paint9_linear)"/>
 <g id="line_solarToHome1" filter="url(#filter6_f)">
 <path d="M180 106L180 190" stroke="white" stroke-width="0.5"/>
 </g>
 </g>
-<g id="line_battToHomeGroup">
+<g id="line_battToHomeGroup" visibility={DrawingDarkComponent.lineBattToHomeDark}>
 <path id="line_battToHome2" d="M80.0002 263L163 218" stroke="url(#paint10_linear)"/>
 <g id="line_battToHome1" filter="url(#filter7_f)">
 <path d="M80.0002 263L163 218" stroke="white" stroke-width="0.5"/>
 </g>
 </g>
-<g id="line_gridToHomeGroup">
+<g id="line_gridToHomeGroup" visibility={DrawingDarkComponent.lineGridToHomeDark}>
 <path id="line_gridToHome2" d="M280 263.998L198 216.998" stroke="url(#paint11_linear)"/>
 <g id="line_gridToHome1" filter="url(#filter8_f)">
 <path d="M280 263.998L198 216.998" stroke="white" stroke-width="0.5"/>
@@ -645,7 +727,7 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="live_home_group_2">
+<g id="live_home_group_2" visibility={DrawingDarkComponent.liveHomeDark}>
 <g id="live_circle_home_group">
 <g id="live_circle_home6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter21_f)">
 <circle cx="180" cy="213" r="47" stroke="#00D1FF" stroke-opacity="0.9" stroke-width="8"/>
@@ -739,10 +821,10 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="blur_circle_grid_2" filter="url(#filter45_dd)" class="onlyImageAnimation">
+<g id="blur_circle_grid_2" filter="url(#filter45_dd)" visibility={DrawingDarkComponent.blurGridDark}>
 <circle cx="297" cy="280" r="47" fill="#333333"/>
 </g>
-<g id="live_grid_group_2">
+<g id="live_grid_group_2" visibility={DrawingDarkComponent.liveGridDark}>
 <g id="live_circle_grid_group">
 <g id="live_circle_grid6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter46_f)">
 <circle cx="297" cy="280" r="47" stroke="#FFF500" stroke-opacity="0.9" stroke-width="8"/>
@@ -831,10 +913,10 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="blur_circle_batt_2" filter="url(#filter70_dd)" class="onlyImageAnimation">
+<g id="blur_circle_batt_2" filter="url(#filter70_dd)" visibility={DrawingDarkComponent.blurBattDark}>
 <circle cx="61" cy="280" r="47" fill="#333333"/>
 </g>
-<g id="live_batt_group_2">
+<g id="live_batt_group_2" visibility={DrawingDarkComponent.liveBattDark}>
 <g id="live_circle_batt_group">
 <g id="live_circle_batt6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter71_f)">
 <circle cx="61" cy="280" r="47" stroke="#05FF00" stroke-opacity="0.9" stroke-width="8"/>
@@ -1000,10 +1082,10 @@ function AnimationTestPage() {
 </g>
 </g>
 </g>
-<g id="blur_circle_solar_2" filter="url(#filter95_dd)" class="onlyImageAnimation">
+<g id="blur_circle_solar_2" filter="url(#filter95_dd)" visibility={DrawingDarkComponent.blurSolarDark}>
 <circle cx="180" cy="77" r="47" fill="#333333"/>
 </g>
-<g id="blur_solar_group">
+<g id="blur_solar_group" visibility={DrawingDarkComponent.liveSolarDark}>
 <g id="blur_circle_solar_group">
 <g id="blur_circle_solar6" style={{mixBlendMode: 'color-dodge'}} filter="url(#filter96_f)">
 <circle cx="180" cy="77" r="47" stroke="#FF007A" stroke-opacity="0.9" stroke-width="8"/>

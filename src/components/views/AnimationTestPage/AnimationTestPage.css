@@ -30,10 +30,17 @@ circle.solarToHome {
     animation: moveTo 2s linear forwards infinite, colorSolarToHome 2s linear forwards infinite;
 }
 
-.onlyImageAnimation {
-    animation: moveToForImage 4s linear forwards infinite
+#blur_circle_solar_2
+{
+    animation: opacityChange 2s linear forwards infinite
 }
-
+#blur_circle_batt_2 {
+    animation: opacityChange 2s linear forwards infinite
+}
+#blur_circle_grid_2
+{
+    animation: opacityChange 2s linear forwards infinite
+}
 
 /*  Batt Part  */
 circle.battToHome {
@@ -79,28 +86,12 @@ circle.gridToHome {
     }
 }
 /* Moving Animation */
-@keyframes moveToForImage {
-    0% {
-        opacity: 1;
+@keyframes opacityChange {
+    0%{
+        opacity: 0;
     }
 
-    30% {
-        opacity: 0.7;
-    }
-
-    40% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 0.7;
-    }
-
-    100% {
+    100%{
         opacity: 1;
     }
 }
